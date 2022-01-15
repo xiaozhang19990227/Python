@@ -1,0 +1,16 @@
+# 扩展练习 等腰三角形的打印
+row=1
+while row<=5:
+    col=1
+    while col<=5-row:# 控制打印空格的数量
+        print(" ",end=" ")
+        col+=1
+        pass
+    k=1
+    while k<=2*row-1:# 控制打印*号
+        print("*", end=" ")
+        k+=1
+        pass
+    print()
+    row+=1
+    pass
