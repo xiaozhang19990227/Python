@@ -1,0 +1,7 @@
+print('continue的使用')
+for item in range(1,100):
+    if item%2==0:
+        continue
+        print('在continue的后面会不会继续执行呢')
+        pass
+    print(item)
