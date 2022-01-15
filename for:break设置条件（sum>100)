@@ -1,0 +1,9 @@
+sum=0
+for item in range(1,51):
+    if sum>100:
+        print('循环执行到%d就退出来了'%item)
+        break
+        pass
+    sum+=item
+    pass
+    print("sum=%d"%sum)
