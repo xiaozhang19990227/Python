@@ -1,0 +1,10 @@
+row=7
+while row>=1:
+    col=1
+    while col<=row:
+        print("*",end="  ")
+        col+=1
+        pass
+    print()
+    row-=1
+    pass
