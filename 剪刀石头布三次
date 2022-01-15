@@ -1,0 +1,22 @@
+count=1
+while count<=3:
+    import random
+    # 直接导入产生随机数的模块
+    person=int(input('请出拳：【0：石头 1：剪刀 2：布】'))
+    computer=random.randint(0,2)
+    if person==0 and computer==1:
+        print("厉害了  你赢了")
+        pass
+    elif person==1 and computer==2:
+        print("厉害了  你赢了")
+        pass
+    elif person==2 and computer==0:
+        print("厉害了  你赢了")
+        pass
+    elif person==computer:
+        print("不错  平手")
+        pass
+    else:
+        print("哈哈  你输了")
+        pass
+    count+=1
