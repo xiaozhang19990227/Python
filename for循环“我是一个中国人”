@@ -1,0 +1,4 @@
+tags='我是一个中国人'
+for item in tags:
+    print(item)
+    pass
