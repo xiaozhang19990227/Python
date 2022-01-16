@@ -1,0 +1,27 @@
+name='peter'
+print('姓名首字母转换大写%s'%name.capitalize())
+# capitalize 首字母变大写
+a='        hello       '
+b=a.strip()
+# 去除字符串中两边的空格
+print(a)
+print(a.lstrip())
+# 删除左边的空格
+print(a.rstrip())
+# 删除右边的空格
+# 复制字符串
+print('a的内存地址%d'%id(a))
+# 一个对象的内存地址
+b=a
+# 在此只是把a的内存地址赋给b
+print('b的内存地址%d'%id(b))
+print(b)
+dataStr='I love Python'
+print(dataStr.find('M'))
+# find函数查找目标对象在序列中的值，没找到返回-1
+print(dataStr.index('W'))
+# 检测字符串中是否包含子字符串 返回下标值 没找到 就会报异常
+print(dataStr.startswith('I'))#判断开头
+print(dataStr.endswith('n'))#判断结尾
+print(dataStr.lower())#转换成小写
+print(dataStr.upper())#转换成大写
