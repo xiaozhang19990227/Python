@@ -1,0 +1,7 @@
+Test='python'
+print(type(Test))
+print('获取第一个字符%s'%Test[0])
+print('获取第二个字符%s'%Test[1])
+for item in Test:
+    print(item,end=' ')
+    pass
