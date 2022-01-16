@@ -1,0 +1,8 @@
+# 打印到e停止打印和跳过o
+for item in 'I love python':
+    # if item=='e':
+    #     break
+    if item == 'o':
+        continue
+    print(item,end=' ')
+
