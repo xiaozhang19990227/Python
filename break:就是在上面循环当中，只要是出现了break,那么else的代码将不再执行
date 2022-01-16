@@ -1,0 +1,7 @@
+for item in range(1,11):
+    print(item,end=' ')
+    if item>=5:
+        break
+    pass
+else:
+    print('就是在上面循环当中，只要是出现了break,那么else的代码将不再执行')
