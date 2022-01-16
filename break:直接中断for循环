@@ -1,0 +1,8 @@
+index=1
+while index<=100:
+    if index>20:
+        break
+        pass
+    print(index)
+    index+=1
+    
