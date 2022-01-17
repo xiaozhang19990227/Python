@@ -1,0 +1,12 @@
+strmsg='hello world'
+# slice[start:end:step]左闭右开  start<=value<end 范围
+print(strmsg)
+print(strmsg[0])
+print(strmsg[2:5])
+# 2-5下标之间的数据
+print(strmsg[2:])
+# 第三个字符到最后
+print(strmsg[:3])
+# strmsg[0:3]=strmsg[:3]
+print(strmsg[::-1])
+# 倒叙输出  负号表示方向 从右边往左去遍历
