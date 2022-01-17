@@ -1,0 +1,14 @@
+dicta={'pro':'艺术','school':'北京电影学院'} # 空字典
+dicta['name']='李易峰'   #key:value
+dicta['age']='30'
+dicta['pos']='演员'
+print(dicta)
+
+#删除操作
+# del dicta['name']#通过指定键进行删除
+dicta.pop('age')#通过指定键进行删除
+print(dicta)
+#如何排序 按照key排序
+print(sorted(dicta.item(),key=lambda d:d[0]))
+#如何排序 按照value排序
+print(sorted(dicta.item(),value=lambda d:d[1]))
