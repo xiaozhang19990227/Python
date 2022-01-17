@@ -1,0 +1,6 @@
+li=[]#空列表
+li=[1,2,3,'你好']
+print(len(li))#len函数可以获取到列表对象中的数据个数
+stra='我喜欢python'
+print(len(stra))
+print(type(li))
