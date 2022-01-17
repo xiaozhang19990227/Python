@@ -1,0 +1,16 @@
+#元组的创建  不能进行修改
+tuplea=()#空元组
+tuplea=('abcd',89,9.12,'peter',[11,22,33,44])
+print(id(tuplea))
+print(type(tuplea))
+print(tuplea)
+#元组的查询
+for item in tuplea:
+    print(item,end=' ')
+    pass
+print(tuplea[2:4])
+print(tuplea[::-1])
+print(tuplea[::-2])#反转字符串 每隔两个去一次
+print(tuplea[::-3])#反转字符串 每隔三个去一次
+print(tuplea[-2:-1:])#倒着取下标 为-2 到-1的区间的
+print(tuplea[-4:-2:])#倒着取下标 为-4 到-2的区间的
