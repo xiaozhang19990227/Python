@@ -1,0 +1,13 @@
+#元组的创建  不能进行修改
+tuplea=('abcd',89,9.12,'peter',[11,22,33,44])
+print(id(tuplea))
+print(type(tuplea))
+print(tuplea)
+# tuplea[0]='PythonHello'#错误的
+tuplea[4][0]=285202 #可以对元组中的列表类型的数据进行修改
+print(tuplea)
+print(type(tuplea[4]))
+tupleb=(1)
+print(type(tupleb))
+tuplec=tuple(range(10))
+print(tuplec.count(8))
