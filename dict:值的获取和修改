@@ -1,0 +1,25 @@
+dicta={'pro':'艺术','school':'北京电影学院'} # 空字典
+dicta['name']='李易峰'   #key:value
+dicta['age']=30
+dicta['pos']='演员'
+print(dicta)
+print(type(dicta))
+#结束添加
+print(len(dicta))#数据项长度
+print(dicta['name'])#通过键获取对应的值
+dicta['name']='谢霆锋' #修改对应的值
+dicta['school']='香港大学'
+dicta.update({'age':32})#可以添加或更新
+print(dicta)
+#获取所有的键
+print(dicta.keys())
+#获取所有的值
+print(dicta.values())
+# 获取所以键和值
+print(dicta.items())
+for item in dicta.items():
+    print(item)
+    pass
+for key,value in dicta.items():
+    print('%s==%s'%(key,value))
+    pass
