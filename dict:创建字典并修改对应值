@@ -1,0 +1,13 @@
+# 如何创建字典
+dicta={} # 空字典
+dicta['name']='李易峰'   #key:value
+dicta['age']=30
+dicta['pos']='演员'
+print(dicta)
+print(type(dicta))
+#结束添加
+print(len(dicta))#数据项长度
+print(dicta['name'])#通过键获取对应的值
+dicta['name']='谢霆锋' #修改对应的值
+dicta['school']='香港大学'
+print(dicta)
