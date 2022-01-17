@@ -1,0 +1,14 @@
+#查找
+lista=['abcd',785,12.23,'qiuzhi',True]
+print('---------增加---------')
+print('追加之前',lista)
+lista.append(['fff','ddd'])
+lista.append(8888)
+print('追加之后',lista)
+lista.insert(1,'这是我刚插入的数据')#插入操作 需要执行一个位置的插入
+print(lista)
+rsdata=list(range(10))#强制转换成list对象
+print(type(rsdata))
+lista.extend(rsdata)#扩展  批量增加
+lista.extend([11,22,33,44])
+print(lista)
