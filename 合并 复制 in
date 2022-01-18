@@ -1,0 +1,19 @@
+# 共有方法  +  *  in
+# 字符串合并
+stra='人生苦短'
+strb='我用python'
+# list 合并
+lista=list(range(10))
+listb=list(range(11,20))
+print(lista+listb)
+print(stra+strb)
+
+# 复制
+print(stra*3)
+print(lista*3)
+
+# in  对象是否存在  结果是一个bool值
+print('我' in stra) #False
+print(9 in lista)  #False
+dicta={'name':'peter'}
+print('name' in dicta)
