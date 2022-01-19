@@ -1,0 +1,17 @@
+# 可变参数  当参数的个数不确定时使用，比较灵活
+def getcomputer(*args):
+    '''
+
+    :param args:可变长的参数类型
+    :return:
+    '''
+    print(args)
+    result=0
+    for item in args:
+        result+=item
+        pass
+    print('result=%d'%result)
+    pass
+getcomputer(1)
+getcomputer(1,2)
+getcomputer(1,2,3)
