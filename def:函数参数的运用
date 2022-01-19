@@ -1,0 +1,14 @@
+# 函数定义
+def printinfo(name,height,weight,hobby,pro):
+    '''
+    这个函数是用来打印个人信息的  是小张信息的组合
+    :return:
+    '''
+    #函数代码块
+    print('%s的身高是%f' % (name,height))
+    print('%s的体重是%f' % (name,weight))
+    print('%s的爱好是%s' % (name,hobby))
+    print('%s的专业是%s' % (name,pro))
+    pass
+# 函数的调用
+printinfo('小李',189,200,'打游戏','机械工程师')
