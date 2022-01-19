@@ -1,0 +1,12 @@
+# 关键字可变参数  ** 来定义
+# 在函数体内  参数关键字是一个字典类型 key是一个字符串
+def keyfunc(**kwargs):
+    print(kwargs)
+    pass
+# 调用
+# keyfunc(1,2,3)  不可以传递的
+dicta={'name':'leo','age':35}
+# keyfunc(dicta)# 不能传递
+keyfunc(**dicta)
+keyfunc(name='peter',age=26)
+keyfunc()  #长度 0-n个
