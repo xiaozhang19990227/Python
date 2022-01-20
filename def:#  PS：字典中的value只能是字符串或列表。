@@ -1,0 +1,23 @@
+#  写函数，检查传入字典的每个value的长度，如果大于2，那么仅保留前两个长度的内容，并将新内容返回给调用者
+#  PS：字典中的value只能是字符串或列表。
+def dictfunc(dictparms):  #可 **kwargs
+    '''
+    处理字典类型的数据
+    :param dictparms:字典
+    :return:
+    '''
+    result={}  #空字典
+    for key,value in dictparms.items():
+        # key-value
+        if len(value)>2:
+            result[key]=value[:2]  #  像字典去添加数据
+            pass
+        else:
+            result[key]=value
+            pass
+        pass
+    return result
+
+#  函数调用
+dictobj={'name':'欧阳小雨','hobby':['唱歌','跳舞','运动','编程'],'pro':'中国艺术'}
+print(dictfunc(dictobj))
