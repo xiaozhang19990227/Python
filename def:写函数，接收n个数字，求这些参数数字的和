@@ -1,0 +1,15 @@
+# 写函数，接收n个数字，求这些参数数字的和
+def sumfunc(*args):
+    # 处理接受的数据
+    result=0
+    for item in args:
+        result+=item
+        pass
+    return result
+
+#调用函数
+rs=sumfunc(1,2,3,4)
+print('rs={0}'.format(rs))
+# format 格式化输出
+rs=sumfunc(4,5,6,7,8,9,10)
+print('rs1=%d'%rs)
