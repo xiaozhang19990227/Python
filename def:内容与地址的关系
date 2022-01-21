@@ -1,0 +1,24 @@
+a=1  #不可变类型 地址改变
+def func(x):
+    print('x的地址:{}'.format(id(x)))
+    x=2
+    print('x的值修改之后的地址{}'.format(id(x)))
+    print(x)
+    pass
+print('a的地址：{}'.format(id(a)))
+func(a)
+print(a)
+
+# 可变类型  地址不变
+li=[]#列表类型
+def testrenc(parms):
+    li.append([1,2,3,4,5]) #扩展
+    print(id(parms))
+    print('内部的{}'.format(parms))
+    pass
+print(id(li))
+testrenc(li)
+print('外部的变量对象{}'.format(li))
+
+#  1、在python中  万物皆对象，在函数调用时，实参传递的就是对象的引用
+#  2、参数传递就是通过对象引用来完成的
