@@ -1,0 +1,25 @@
+#  局部变量  就是在函数内部定义的变量【作用域仅仅局限在函数的内部】
+#  不同的函数可以定义相同的局部变量，不会产生影响
+#  局部变量作用：为了临时的保存数据 需要在函数中定义来进行存储
+#  全局变量
+pro='计算机信息管理'
+def printinfo():
+    name='peter'
+    print('{}.{}'.format(name,pro))
+    pass
+def testmethod():
+    name='刘德华'
+    print(name)
+    pass
+def changeglobal():
+    '''
+    要修改全局变量
+    :return:
+    '''
+    global pro  #函数内部对全局变量修改：global 关键字 进行声明
+    pro='市场营销'
+    pass
+changeglobal()
+print(pro)
+printinfo()
+testmethod()
