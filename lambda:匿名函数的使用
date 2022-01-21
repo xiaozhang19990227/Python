@@ -1,0 +1,30 @@
+# 匿名函数：lambda 参数1、参数2、参数3：表达式
+# 没有名字的函数，计算表达式有且只有一个，自带return
+def computer(x,y):
+    '''
+    计算数据和
+    :param x:
+    :param y:
+    :return:
+    '''
+    return x+y
+    pass
+
+print(computer(10,45))
+M=lambda x,y:x+y
+# 通过变量来调用匿名函数
+print(M(10,45))
+
+age=25
+print('可以参军' if age>18 else '继续上学')#  可以替换传统双分支的写法
+
+functest=lambda x,y:x if x>y else y
+print(functest(2,12))
+
+rs=(lambda x,y:x if x>y else y)(16,12)  #  直接运用
+print(rs)
+var=lambda x:(x**2)+900
+print(var(10))
+
+# 缺点：lambda只能是单个表达式，不是一个代码块，就为了简单
+# 仅仅能封装有限的逻辑，复杂的逻辑实现不了，必须用def来处理
