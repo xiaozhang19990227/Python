@@ -1,0 +1,19 @@
+#  递归案例  模拟实现  树形结构的遍历
+import os  # 引入文件操作模块
+def findfile(file_Path):
+    listRs=os.listdir(file_Path)  #  得到该路径下的所有文件夹
+    for fileItem in listRs:
+        full_path=os.path.join(file_Path,fileItem)  #  获取完整的文件路径
+        if os.path.isdir(full_path):  #判断是否是文件夹
+            findfile(full_path)  #如果是一个文件夹  再次去递归
+            pass
+        else:
+            print(fileItem)  # 打印文件
+            pass
+        pass
+    else:
+        return
+
+# 调用搜索文件路径
+findfile('D:\音乐\经典无损歌曲大全10G（1）')
+
