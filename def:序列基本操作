@@ -1,0 +1,35 @@
+# 序列操作 str  元组 list
+# all()  result:boll  对象中的元素除了是0、空、FALSE外都算 TURE  类似and
+print(all([]))
+print(all(()))
+print(all([1,2,3,4,False]))
+print(all([1,2,4]))
+print(all((3,4,0)))
+
+# any 类似于逻辑运算符 or 的判断  只要有一个为TRUE 结果就为TURE
+print('-----------any----------')
+print(any((3,4,0)))
+print(any(('',False,0)))
+
+print('-----------sort 和 sorted----------')
+li=[2,45,1,67,23,10] #原始对象
+li.sort() #list的排序方法 直接修改的是原始对象
+print('-------排序之前-------{}'.format(li))
+varlist=sorted(li,reverse=True) #降序排列 默认升序
+print('-------排序之后-------{}'.format(varlist))
+
+tupArray=(2,45,1,67,23,10)
+varRs=sorted(tupArray,reverse=False) #升序排列
+print(varRs)
+
+# reverse()用于反向列表中的元素  list.reserve()
+
+# zip():就是用来打包的
+s1=['a','b','c']
+s2=['你','我','他']
+s3=['你','我','他','哈哈','呵呵']
+print(list(zip(s1))) #压缩一个数据
+ziplist=zip(s1,s2) #两个参数
+print(list(ziplist))
+ziplist1=zip(s2,s3) #两个参数
+print(list(ziplist1))
