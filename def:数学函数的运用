@@ -1,0 +1,20 @@
+# 取绝对值
+print(abs(-34))
+# round  取近似值
+print(round(3.66,1)) #一位小数
+# pow 求次方
+print(3**3)
+print(pow(3,3))
+# max 求最大值
+print(max([23,123,4,5,2,1,786,234]))
+print(max(23,235))
+# sum 使用
+print(sum(range(50),3))  #  加3
+print(sum(range(50)))
+# eval 执行表达式
+a,b,c=1,2,3
+print('动态执行的函数={}'.format(eval('a+b+c')))
+def testfun():
+    print('我执行了吗？')
+    pass
+eval('testfun()')  # 可以调用函数执行
