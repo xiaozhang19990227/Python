@@ -1,0 +1,15 @@
+print(bin(10)) # 转换二进制
+print(hex(23)) #转换十六进制
+tup=(1,2,3,4)
+print(type(tup))
+li=list(tup) #强制转换
+print(type(li))
+li.append('强制转换成功')
+print(li)
+tuplist=tuple(li)
+print(type(tuplist))
+# 字典操作 dict()
+dic=dict(name='小明',age=18)  #创建一个字典
+print(type(dic))
+# bytes转换
+print(bytes('我喜欢python',encoding='utf-8'))
