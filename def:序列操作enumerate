@@ -1,0 +1,17 @@
+listobj=['a','b','c']
+for item in enumerate(listobj):
+    print(item)
+    pass
+for index,item in enumerate(listobj):
+    print(index,item)
+    pass
+for index,item in enumerate(listobj,5):
+    print(index,item)
+
+dicobj={}
+dicobj['name']='李易峰'
+dicobj['hobby']='唱歌'
+dicobj['pro']='艺术设计'
+
+for item in enumerate(dicobj):
+    print(item[1])
