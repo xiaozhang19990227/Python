@@ -1,0 +1,16 @@
+# 求三组连续自然数的和：求出1到10、20、30和35到45的三个和
+
+def sumrange(m,n):
+    '''
+    求从m到n的连续自然函数的总和
+    :param m: 开始值
+    :param n: 结束值
+    :return: 
+    '''
+    return sum(range(m,n+1))
+    pass
+
+print(sumrange(1,10))
+print(sumrange(20,30))
+print(sumrange(30,45))
+
