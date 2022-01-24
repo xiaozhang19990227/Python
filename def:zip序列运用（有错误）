@@ -1,0 +1,21 @@
+def printbookinfo():
+    books=[]  #存储所有的图书信息
+    id=input('请输入编号：每个项以空格分隔')
+    bookname=input('请输入书名：每个项以空格分隔')
+    bookpos=input('请输入位置：每个项以空格分隔')
+    idlist=id.split(' ')
+    namelist=id.split(' ')
+    poslist=id.split(' ')
+
+    bookinfo=zip(idlist,namelist,poslist)  # 打包处理
+    for bookitem in bookinfo:
+        '''
+        遍历图书信息进行存储
+        '''
+        dictinfo={'编号':bookitem[0],'书名':bookitem[1],'位置':bookitem[2]}
+        books.append(dictinfo)  #将字典对象添加到list容器
+        pass
+    for item in books:
+        print(item)
+        pass
+printbookinfo()
